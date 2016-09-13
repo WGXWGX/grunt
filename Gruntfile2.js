@@ -1,5 +1,5 @@
 module.exports = function(grunt){
-	  grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-sass');
@@ -51,7 +51,14 @@ module.exports = function(grunt){
 				}]
 
 			}
-		}
+		},	
+		css:{
+				src:'dest/app.js',
+				dest:'dest/app.min.js'
+			}
+		},
+		
+
 	
 	
 	});
