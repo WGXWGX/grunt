@@ -58,7 +58,25 @@ module.exports = function(grunt){
 			}
 		},
 		
-
+		cssmin:{
+			css:{
+				// src:'dest/style.css',
+				// dest:'dest/style.min.css'
+				files: [{			       
+					expand: true,			        
+					cwd: 'dest/',			      
+					src: ['*.css'],			       
+					dest: 'dest/',			        
+					ext: '.min.css'		    
+				}]
+			}
+		},
+		uglify:{
+			css:{
+				src:'dest/app.js',
+				dest:'dest/app.min.js'
+			}
+		}
 	
 	
 	});
